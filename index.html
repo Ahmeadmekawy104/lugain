@@ -2,11 +2,8 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>For Lugain 🖤</title>
 
@@ -29,12 +26,7 @@ body {
 
 body {
     overflow: hidden;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+    font-family: Georgia, "Times New Roman", serif;
     color: #ead9dd;
 
     background:
@@ -57,18 +49,21 @@ body {
     inset: 0;
     overflow: hidden;
     pointer-events: none;
+    z-index: 1;
 }
+
+
+/* =====================================================
+   RED GLOW
+===================================================== */
 
 .glow {
     position: absolute;
-
     width: 500px;
     height: 500px;
-
     border-radius: 50%;
 
-    background:
-        rgba(100, 0, 25, 0.13);
+    background: rgba(100, 0, 25, 0.13);
 
     filter: blur(120px);
 
@@ -113,15 +108,14 @@ body {
 
 
 /* =====================================================
-   RED PULSE
+   BACKGROUND PULSE
 ===================================================== */
 
 .redPulse {
     position: fixed;
-
     inset: -30%;
-
     pointer-events: none;
+    z-index: 2;
 
     background:
         radial-gradient(
@@ -139,7 +133,8 @@ body {
 
 @keyframes pulseBackground {
 
-    0%, 100% {
+    0%,
+    100% {
         transform: scale(1);
         opacity: .5;
     }
@@ -219,7 +214,8 @@ body {
 
 @keyframes starBlink {
 
-    0%, 100% {
+    0%,
+    100% {
         opacity: 0;
         transform: scale(.5);
     }
@@ -384,13 +380,13 @@ body {
 
     position: relative;
 
-    width: min(92%, 650px);
+    width: min(88%, 580px);
 
-    max-height: 86vh;
+    max-height: 78vh;
 
     overflow-y: auto;
 
-    padding: 40px 30px;
+    padding: 28px 28px;
 
     text-align: center;
 
@@ -399,27 +395,27 @@ body {
         linear-gradient(
             145deg,
             rgba(48,5,15,.48),
-            rgba(4,1,3,.92)
+            rgba(4,1,3,.88)
         );
 
     border:
         1px solid
         rgba(130,20,45,.3);
 
-    border-radius: 28px;
+    border-radius: 24px;
 
     backdrop-filter:
-        blur(22px);
+        blur(18px);
 
     box-shadow:
 
-        0 35px 100px
+        0 25px 70px
         rgba(0,0,0,.9),
 
-        inset 0 0 70px
+        inset 0 0 50px
         rgba(100,0,25,.06),
 
-        0 0 50px
+        0 0 40px
         rgba(80,0,20,.12);
 
     animation:
@@ -457,7 +453,8 @@ body {
 
 @keyframes borderBreath {
 
-    0%, 100% {
+    0%,
+    100% {
         opacity: .3;
     }
 
@@ -473,10 +470,10 @@ body {
         opacity: 0;
 
         transform:
-            translateY(40px)
+            translateY(30px)
             scale(.94);
 
-        filter: blur(10px);
+        filter: blur(8px);
     }
 
     to {
@@ -498,7 +495,7 @@ body {
 
 .main-heart {
 
-    font-size: 65px;
+    font-size: 55px;
 
     color: #781126;
 
@@ -517,7 +514,8 @@ body {
 
 @keyframes calmHeartbeat {
 
-    0%, 100% {
+    0%,
+    100% {
         transform: scale(1);
     }
 
@@ -533,12 +531,12 @@ body {
 
 .small-title {
 
-    margin-top: 8px;
-    margin-bottom: 12px;
+    margin-top: 5px;
+    margin-bottom: 7px;
 
-    font-size: 11px;
+    font-size: 9px;
 
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 
     text-transform: uppercase;
 
@@ -550,7 +548,7 @@ h1 {
     margin: 0;
 
     font-size:
-        clamp(42px,9vw,68px);
+        clamp(38px,8vw,60px);
 
     font-weight: normal;
 
@@ -576,7 +574,8 @@ h1 {
 
 @keyframes nameGlow {
 
-    0%, 100% {
+    0%,
+    100% {
 
         text-shadow:
             0 0 15px
@@ -591,14 +590,20 @@ h1 {
     }
 }
 
+
+/* =====================================================
+   LINE
+===================================================== */
+
 .line {
 
-    width: 90px;
+    width: 70px;
 
     height: 1px;
 
     margin:
-        23px auto;
+        16px
+        auto;
 
     background:
 
@@ -617,13 +622,13 @@ h1 {
 
 .message {
 
-    max-width: 520px;
+    max-width: 470px;
 
     margin: 0 auto;
 
-    font-size: 17px;
+    font-size: 15px;
 
-    line-height: 1.9;
+    line-height: 1.65;
 
     color: #bda5aa;
 }
@@ -642,9 +647,9 @@ h1 {
 
 .activity {
 
-    margin-top: 25px;
+    margin-top: 20px;
 
-    padding-top: 22px;
+    padding-top: 18px;
 
     border-top:
         1px solid
@@ -653,15 +658,15 @@ h1 {
 
 .activity-title {
 
-    font-size: 13px;
+    font-size: 11px;
 
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
     text-transform: uppercase;
 
     color: #87505b;
 
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 }
 
 .choices {
@@ -670,7 +675,7 @@ h1 {
 
     justify-content: center;
 
-    gap: 10px;
+    gap: 7px;
 
     flex-wrap: wrap;
 }
@@ -683,9 +688,10 @@ h1 {
 button {
 
     padding:
-        12px 22px;
+        9px 17px;
 
-    border-radius: 50px;
+    border-radius:
+        50px;
 
     border:
         1px solid
@@ -694,15 +700,18 @@ button {
     background:
         rgba(45,3,12,.55);
 
-    color: #dfc9ce;
+    color:
+        #dfc9ce;
 
     font-family:
         Georgia,
         serif;
 
-    font-size: 15px;
+    font-size:
+        13px;
 
-    cursor: pointer;
+    cursor:
+        pointer;
 
     transition:
         all .4s ease;
@@ -711,19 +720,21 @@ button {
 button:hover {
 
     transform:
-        translateY(-3px)
+        translateY(-2px)
         scale(1.03);
 
     background:
         rgba(90,10,28,.45);
 
     box-shadow:
-        0 0 28px
+        0 0 25px
         rgba(130,15,45,.3);
 }
 
 button:active {
-    transform: scale(.96);
+
+    transform:
+        scale(.96);
 }
 
 .choice {
@@ -731,9 +742,9 @@ button:active {
     margin: 0;
 
     padding:
-        10px 17px;
+        8px 13px;
 
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -743,20 +754,20 @@ button:active {
 
 #result {
 
-    min-height: 55px;
+    min-height: 45px;
 
-    margin-top: 18px;
+    margin-top: 13px;
 
     color: #cbaeb4;
 
-    font-size: 16px;
+    font-size: 13px;
 
-    line-height: 1.7;
+    line-height: 1.6;
 
     opacity: 0;
 
     transform:
-        translateY(10px);
+        translateY(8px);
 
     transition:
         all .8s ease;
@@ -785,11 +796,14 @@ button:active {
 
     transition:
 
-        max-height 1.5s ease,
+        max-height
+        1.5s ease,
 
-        opacity 1s ease,
+        opacity
+        1s ease,
 
-        transform 1s ease;
+        transform
+        1s ease;
 
     transform:
         translateY(15px);
@@ -797,7 +811,7 @@ button:active {
 
 #secret.show {
 
-    max-height: 320px;
+    max-height: 280px;
 
     opacity: 1;
 
@@ -809,9 +823,9 @@ button:active {
 
     color: #bca1a7;
 
-    font-size: 16px;
+    font-size: 14px;
 
-    line-height: 1.9;
+    line-height: 1.7;
 }
 
 .secret-text strong {
@@ -832,7 +846,7 @@ button:active {
 
     display: none;
 
-    margin-top: 18px;
+    margin-top: 12px;
 }
 
 
@@ -844,13 +858,15 @@ button:active {
 
     position: fixed;
 
-    right: 20px;
-    bottom: 20px;
+    right: 15px;
 
-    z-index: 1000;
+    bottom: 15px;
 
-    width: 48px;
-    height: 48px;
+    z-index: 100;
+
+    width: 45px;
+
+    height: 45px;
 
     padding: 0;
 
@@ -860,10 +876,10 @@ button:active {
         rgba(10,1,4,.85);
 
     backdrop-filter:
-        blur(12px);
+        blur(10px);
 
     box-shadow:
-        0 0 25px
+        0 0 20px
         rgba(120,10,35,.25);
 }
 
@@ -878,7 +894,8 @@ button:active {
 
 @keyframes musicPulse {
 
-    0%,100% {
+    0%,
+    100% {
 
         box-shadow:
             0 0 15px
@@ -888,7 +905,7 @@ button:active {
     50% {
 
         box-shadow:
-            0 0 35px
+            0 0 30px
             rgba(150,15,45,.55);
     }
 }
@@ -900,11 +917,11 @@ button:active {
 
 .footer {
 
-    margin-top: 25px;
+    margin-top: 18px;
 
-    font-size: 10px;
+    font-size: 8px;
 
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
     color: #4e2930;
 }
@@ -944,9 +961,7 @@ button:active {
     pointer-events: none;
 
     transition:
-        opacity 2s ease;
-
-    padding: 20px;
+        opacity 1.5s ease;
 }
 
 #finalScene.show {
@@ -958,7 +973,7 @@ button:active {
 
 .final-content {
 
-    width: min(90%, 500px);
+    width: min(90%, 480px);
 
     padding: 25px;
 
@@ -994,7 +1009,7 @@ button:active {
 
 .final-heart {
 
-    font-size: 80px;
+    font-size: 75px;
 
     color: #8c1630;
 
@@ -1007,9 +1022,11 @@ button:active {
 
 @keyframes finalPulse {
 
-    0%,100% {
+    0%,
+    100% {
 
-        transform: scale(1);
+        transform:
+            scale(1);
 
         filter:
             drop-shadow(
@@ -1020,7 +1037,8 @@ button:active {
 
     50% {
 
-        transform: scale(1.1);
+        transform:
+            scale(1.1);
 
         filter:
             drop-shadow(
@@ -1032,23 +1050,23 @@ button:active {
 
 .final-content h2 {
 
-    font-size: 38px;
+    margin:
+        8px 0 15px;
+
+    font-size: 35px;
 
     font-weight: normal;
 
     color: #e4cdd2;
-
-    margin:
-        10px 0 20px;
 }
 
 .final-content p {
 
     color: #b79ba1;
 
-    line-height: 2;
+    line-height: 1.8;
 
-    font-size: 17px;
+    font-size: 15px;
 
     margin-bottom: 25px;
 }
@@ -1062,26 +1080,18 @@ button:active {
 
     display: inline-block;
 
-    margin-top: 10px;
-
     padding:
-        11px 24px;
+        10px 22px;
 
-    font-size: 14px;
-
-    background:
-        rgba(45,3,12,.65);
-}
-
-#backButton:hover {
+    font-size: 13px;
 
     background:
-        rgba(100,10,30,.5);
+        rgba(45,3,12,.6);
 }
 
 
 /* =====================================================
-   RED FLASH
+   SCREEN FLASH
 ===================================================== */
 
 .screenFlash {
@@ -1131,13 +1141,13 @@ button:active {
 
     position: fixed;
 
-    z-index: 2000;
+    z-index: 700;
 
     pointer-events: none;
 
     color: #9b1837;
 
-    font-size: 23px;
+    font-size: 22px;
 
     animation:
         clickHeart
@@ -1177,206 +1187,240 @@ button:active {
 
 @media (max-width: 600px) {
 
-    body {
-        overflow: hidden;
-    }
-
     .scene {
 
         padding:
-            8px;
+            10px;
     }
 
     .card {
 
-        width: 94%;
+        width: 82%;
 
-        max-height: 84vh;
+        max-width: 360px;
+
+        max-height: 70vh;
 
         padding:
-            25px 17px;
+            22px 16px;
 
         border-radius:
-            22px;
+            20px;
     }
 
     .main-heart {
 
-        font-size:
-            48px;
+        font-size: 42px;
     }
 
     .small-title {
 
-        font-size:
-            8px;
+        font-size: 8px;
 
-        letter-spacing:
-            3px;
+        letter-spacing: 3px;
+
+        margin-top: 2px;
     }
 
     h1 {
 
-        font-size:
-            42px;
+        font-size: 40px;
     }
 
     .line {
 
         margin:
-            15px auto;
+            11px auto;
+
+        width: 55px;
     }
 
     .message {
 
-        font-size:
-            14px;
+        font-size: 12px;
 
-        line-height:
-            1.7;
+        line-height: 1.55;
     }
 
     .activity {
 
-        margin-top:
-            18px;
+        margin-top: 14px;
 
-        padding-top:
-            17px;
+        padding-top: 13px;
     }
 
     .activity-title {
 
-        font-size:
-            10px;
+        font-size: 9px;
 
-        letter-spacing:
-            2px;
+        letter-spacing: 1.8px;
 
-        margin-bottom:
-            10px;
+        margin-bottom: 8px;
     }
 
     .choices {
 
-        gap:
-            6px;
+        gap: 5px;
     }
 
     .choice {
 
         padding:
-            8px 11px;
+            7px 10px;
 
-        font-size:
-            12px;
+        font-size: 10px;
     }
 
     #result {
 
-        font-size:
-            13px;
+        font-size: 11px;
 
-        min-height:
-            45px;
+        min-height: 38px;
 
-        margin-top:
-            12px;
+        margin-top: 9px;
     }
 
-    button {
+    #secretButton {
 
         padding:
-            10px 17px;
+            8px 14px;
 
-        font-size:
-            13px;
+        font-size: 11px;
     }
 
     .secret-text {
 
-        font-size:
-            14px;
+        font-size: 11px;
 
-        line-height:
-            1.7;
+        line-height: 1.6;
+    }
+
+    #finalButton {
+
+        padding:
+            8px 14px;
+
+        font-size: 11px;
     }
 
     .footer {
 
-        margin-top:
-            18px;
+        margin-top: 12px;
 
-        font-size:
-            8px;
-    }
+        font-size: 7px;
 
-    #musicButton {
-
-        width:
-            42px;
-
-        height:
-            42px;
-
-        right:
-            12px;
-
-        bottom:
-            12px;
-
-        font-size:
-            15px;
-    }
-
-    .final-content {
-
-        width:
-            94%;
-
-        padding:
-            15px;
-    }
-
-    .final-heart {
-
-        font-size:
-            65px;
-    }
-
-    .final-content h2 {
-
-        font-size:
-            32px;
-    }
-
-    .final-content p {
-
-        font-size:
-            14px;
-
-        line-height:
-            1.8;
-    }
-
-    #backButton {
-
-        padding:
-            9px 20px;
-
-        font-size:
-            13px;
+        letter-spacing: 1.5px;
     }
 
     .moon {
 
+        top: 5%;
+
+        right: 5%;
+
         transform:
-            scale(.6);
+            scale(.55);
+    }
+
+    .glow {
+
+        width: 350px;
+
+        height: 350px;
+
+        filter:
+            blur(90px);
+    }
+
+    #musicButton {
+
+        width: 40px;
+
+        height: 40px;
+
+        right: 10px;
+
+        bottom: 10px;
+
+        font-size: 15px;
+    }
+
+    .final-heart {
+
+        font-size: 65px;
+    }
+
+    .final-content h2 {
+
+        font-size: 30px;
+    }
+
+    .final-content p {
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .card {
+
+        width: 80%;
+
+        max-width: 310px;
+
+        max-height: 67vh;
+
+        padding:
+            18px 13px;
+    }
+
+    .main-heart {
+
+        font-size: 36px;
+    }
+
+    h1 {
+
+        font-size: 34px;
+    }
+
+    .message {
+
+        font-size: 11px;
+    }
+
+    .choice {
+
+        font-size: 9px;
+
+        padding:
+            6px 9px;
+    }
+
+    #secretButton,
+    #finalButton {
+
+        font-size: 10px;
+
+        padding:
+            7px 12px;
+    }
+
+    .footer {
+
+        font-size: 6px;
     }
 }
 
 </style>
-
 </head>
 
 
@@ -1392,18 +1436,14 @@ button:active {
     loop
     preload="auto"
 >
-
     <source
         src="song.mp3"
         type="audio/mpeg"
     >
-
 </audio>
 
 
-<!-- =====================================================
-     MUSIC BUTTON
-===================================================== -->
+<!-- MUSIC BUTTON -->
 
 <button
     id="musicButton"
@@ -1437,7 +1477,7 @@ button:active {
      MAIN SCENE
 ===================================================== -->
 
-<div class="scene" id="mainScene">
+<div class="scene">
 
 <div class="card">
 
@@ -1453,11 +1493,9 @@ button:active {
 
 
     <h1>
-
         <span class="name">
             Lugain
         </span>
-
     </h1>
 
 
@@ -1499,15 +1537,13 @@ button:active {
 
 
     <!-- =================================================
-         QUESTION
+         ACTIVITY
     ================================================= -->
 
     <div class="activity">
 
         <div class="activity-title">
-
             One little question
-
         </div>
 
 
@@ -1701,57 +1737,6 @@ const flash =
 let musicStarted = false;
 
 
-/*
-   Try to start music immediately.
-
-   Modern browsers may block autoplay with sound.
-   If blocked, the first interaction with the page
-   will start the music.
-*/
-
-function attemptAutoplay() {
-
-    music.volume = 0.32;
-
-    const promise =
-        music.play();
-
-    if (promise !== undefined) {
-
-        promise
-            .then(() => {
-
-                musicStarted = true;
-
-                musicButton.innerText =
-                    "🔊";
-
-                musicButton.classList.add(
-                    "playing"
-                );
-
-            })
-            .catch(() => {
-
-                /*
-                   Browser blocked autoplay.
-                   We wait for user interaction.
-                */
-
-                musicButton.innerText =
-                    "🎵";
-
-            });
-
-    }
-
-}
-
-
-/* =====================================================
-   START MUSIC AFTER INTERACTION
-===================================================== */
-
 function startMusic() {
 
     if (!music.paused) {
@@ -1786,15 +1771,9 @@ function startMusic() {
                     "🎵";
 
             });
-
     }
-
 }
 
-
-/* =====================================================
-   FADE MUSIC
-===================================================== */
 
 function fadeMusicIn() {
 
@@ -1818,42 +1797,67 @@ function fadeMusicIn() {
             }
 
         }, 100);
-
 }
 
 
 /* =====================================================
-   AUTOPLAY ON PAGE LOAD
+   TRY AUTOPLAY
 ===================================================== */
 
 window.addEventListener(
     "load",
     () => {
 
-        attemptAutoplay();
+        /*
+           Browsers may block autoplay with sound.
+           We still try immediately.
+        */
+
+        music.volume = 0.32;
+
+        music.play()
+            .then(() => {
+
+                musicStarted = true;
+
+                musicButton.innerText =
+                    "🔊";
+
+                musicButton.classList.add(
+                    "playing"
+                );
+
+            })
+            .catch(() => {
+
+                /*
+                   Browser blocked autoplay.
+                   First interaction will start it.
+                */
+
+                musicButton.innerText =
+                    "🎵";
+            });
 
     }
 );
 
 
 /* =====================================================
-   FALLBACK:
-   FIRST USER INTERACTION STARTS MUSIC
+   START MUSIC ON FIRST INTERACTION
 ===================================================== */
 
 document.addEventListener(
     "click",
     () => {
 
-        if (music.paused) {
-
+        if (!musicStarted) {
             startMusic();
-
         }
 
     },
     {
-        once: true
+        once: false
     }
 );
 
@@ -1864,7 +1868,9 @@ document.addEventListener(
 
 musicButton.addEventListener(
     "click",
-    () => {
+    (event) => {
+
+        event.stopPropagation();
 
         if (music.paused) {
 
@@ -1872,6 +1878,8 @@ musicButton.addEventListener(
 
             music.play()
                 .then(() => {
+
+                    musicStarted = true;
 
                     musicButton.innerText =
                         "🔊";
@@ -1900,7 +1908,6 @@ musicButton.addEventListener(
             musicButton.classList.remove(
                 "playing"
             );
-
         }
 
     }
@@ -1935,7 +1942,6 @@ for (
     document
         .querySelector(".background")
         .appendChild(star);
-
 }
 
 
@@ -1977,8 +1983,8 @@ function createHeart() {
         () => heart.remove(),
         20000
     );
-
 }
+
 
 setInterval(
     createHeart,
@@ -2019,8 +2025,8 @@ function createPetal() {
         () => petal.remove(),
         20000
     );
-
 }
+
 
 setInterval(
     createPetal,
@@ -2045,10 +2051,6 @@ const answers = {
 
 };
 
-
-/* =====================================================
-   QUESTION BUTTONS
-===================================================== */
 
 document
     .querySelectorAll(".choice")
@@ -2094,7 +2096,7 @@ document
 
 
 /* =====================================================
-   SECRET
+   SECRET MESSAGE
 ===================================================== */
 
 secretButton.addEventListener(
@@ -2128,7 +2130,6 @@ secretButton.addEventListener(
 
             finalButton.style.display =
                 "none";
-
         }
 
     }
@@ -2274,7 +2275,6 @@ function createFinalHearts() {
                             "cubic-bezier(.2,.8,.2,1)"
 
                     }
-
                 );
 
                 document.body.appendChild(
@@ -2290,9 +2290,7 @@ function createFinalHearts() {
 
             i * 90
         );
-
     }
-
 }
 
 
@@ -2361,5 +2359,4 @@ for (
 </script>
 
 </body>
-
 </html>
